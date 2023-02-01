@@ -1,0 +1,2 @@
+﻿ INSERT INTO Product (Product.Id, Product.Name, Product.Type, Product.CounterId) VALUES (1, N'Чурка', N'Товары для дома', 1)
+ INSERT INTO Product (Product.Id, Product.Name, Product.Type, Product.CounterId) VALUES (2, N'Доска строительная', N'Товары для дома', 1)

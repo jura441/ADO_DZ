@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADO_DZ", "ADO_DZ\ADO_DZ.csproj", "{29568B13-AED3-433C-810B-41FC3C0543C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZ_2", "DZ_2\DZ_2.csproj", "{C0969935-1684-4AE1-B2EB-4F50DD001CAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{29568B13-AED3-433C-810B-41FC3C0543C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29568B13-AED3-433C-810B-41FC3C0543C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29568B13-AED3-433C-810B-41FC3C0543C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0969935-1684-4AE1-B2EB-4F50DD001CAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0969935-1684-4AE1-B2EB-4F50DD001CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0969935-1684-4AE1-B2EB-4F50DD001CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0969935-1684-4AE1-B2EB-4F50DD001CAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
