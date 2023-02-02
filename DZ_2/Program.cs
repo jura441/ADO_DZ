@@ -16,8 +16,8 @@ namespace DZ_2
             {
                 DataSet setCounter = new DataSet();
                 DataSet setProduct = new DataSet();
-                SqlDataAdapter adapterCounter = new SqlDataAdapter("SELECT * FROM Counter;", "Data Source=(localdb)\\MSSQLLocalDB;Integrated Security=True;Initial Catalog = Storage;");
-                SqlDataAdapter adapterProduct = new SqlDataAdapter("SELECT * FROM Counter;", "Data Source=(localdb)\\MSSQLLocalDB;Integrated Security=True;Initial Catalog = Storage;");
+                SqlDataAdapter adapterCounter = new SqlDataAdapter("SELECT * FROM Counter;", "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog = Storage; Integrated Security=True;");
+                SqlDataAdapter adapterProduct = new SqlDataAdapter("SELECT * FROM Counter;", "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog = Storage;Integrated Security=True;");
                 adapterCounter.Fill(setCounter);
                 adapterProduct.Fill(setProduct);
                 SqlCommandBuilder builderCounter = new SqlCommandBuilder(adapterCounter);
