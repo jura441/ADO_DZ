@@ -31,11 +31,7 @@ namespace DZ_2
                 adapterProduct.DeleteCommand = builderProduct.GetDeleteCommand();
                 adapterProduct.UpdateCommand = builderProduct.GetUpdateCommand();
 
-                Console.WriteLine (builderCounter.GetInsertCommand().CommandText);
-                Console.WriteLine (builderCounter.GetUpdateCommand().CommandText);
-                Console.WriteLine (builderCounter.GetDeleteCommand().CommandText);
-                Console.WriteLine (adapterCounter.InsertCommand);
-
+                
                 //DataRow dr = setCounter.Tables[0].NewRow();
                 //dr.SetField(0, 2);
                 //dr.SetField(1, "Много пластика");
@@ -51,7 +47,9 @@ namespace DZ_2
                 //}
                 //adapterCounter.Update(setCounter);
                 int maxcount = 0;
+                int mincount = Int32.MaxValue;
                 string counterName = "";
+                string counterName2 = "";
                 foreach (DataRow dr in setCounter.Tables[0].Rows)
                 {
                     if (dr.Field<int>("Count") > maxcount)
@@ -59,6 +57,11 @@ namespace DZ_2
                             maxcount = dr.Field<int>("Count");
                         counterName = dr.Field<string>("CounterName");
                      }
+                    if (dr.Field<int>("Count") < mincount)
+                    {
+                        mincount = dr.Field<int>("Count");
+                        counterName2 = dr.Field<string>("CounterName");
+                    }
                 }
                 Console.WriteLine (counterName + " : " + maxcount + "tovarov");
 
